@@ -58,7 +58,7 @@ const Views = () => {
     () => {
       getNetworkStake();
     },
-    /* eslint-disable react-hooks/exhaustive-deps */ []
+    /* eslint-disable react-hooks/exhaustive-deps */[]
   );
 
   return (
