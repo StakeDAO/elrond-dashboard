@@ -60,7 +60,9 @@ const DropzonePem = ({
       setFieldValue(fieldName, updatedFiles);
     }
   };
-  React.useEffect(updateFieldValue, [files]);
+  React.useEffect(updateFieldValue,
+    /* eslint-disable react-hooks/exhaustive-deps */
+    [files]);
 
   const getUpdatedFiles = ({
     existing,
@@ -151,9 +153,8 @@ const DropzonePem = ({
     <>
       <div
         {...getRootProps({
-          className: `dropzone border border-muted rounded ${
-            files.length > 0 ? 'p-0' : 'p-3'
-          } ${isInvalid}`,
+          className: `dropzone border border-muted rounded ${files.length > 0 ? 'p-0' : 'p-3'
+            } ${isInvalid}`,
         })}
       >
         <input {...inputProps} data-testid="inputPem" />
@@ -171,9 +172,8 @@ const DropzonePem = ({
                 {files.map(({ id, name, errors }, i) => (
                   <div
                     key={id}
-                    className={`file border rounded m-1 ${
-                      errors.length > 0 ? 'border-danger' : ''
-                    } `}
+                    className={`file border rounded m-1 ${errors.length > 0 ? 'border-danger' : ''
+                      } `}
                     onClick={disabledOnClick}
                   >
                     <div className="d-flex justify-content-between align-items-center">
