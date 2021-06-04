@@ -74,7 +74,7 @@ const NodeRow = ({ blsKey: key }: { blsKey: NodeType; index: number }) => {
 
   React.useEffect(
     fetchUnBondPeriod,
-    /* eslint-disable react-hooks/exhaustive-deps */ [key.blsKey, key.status]
+    /* eslint-disable react-hooks/exhaustive-deps */[key.blsKey, key.status]
   );
 
   const statusColor =

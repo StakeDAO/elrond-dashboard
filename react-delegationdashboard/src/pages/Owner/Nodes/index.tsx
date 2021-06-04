@@ -57,7 +57,9 @@ const Nodes = () => {
       .catch(error => console.error('getDiplayNodes error', error));
   };
 
-  useEffect(getDiplayNodes, /* eslint-disable react-hooks/exhaustive-deps */ []);
+  useEffect(getDiplayNodes,
+    /* eslint-disable react-hooks/exhaustive-deps */
+    []);
 
   return (
     <>

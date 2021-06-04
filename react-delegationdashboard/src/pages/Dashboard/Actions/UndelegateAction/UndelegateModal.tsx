@@ -97,9 +97,8 @@ const UndelegateModal = ({
                     <div className="input-group">
                       <input
                         type="number"
-                        className={`form-control ${
-                          errors.amount && touched.amount ? 'is-invalid' : ''
-                        }`}
+                        className={`form-control ${errors.amount && touched.amount ? 'is-invalid' : ''
+                          }`}
                         id="amount"
                         name="amount"
                         data-testid="amount"

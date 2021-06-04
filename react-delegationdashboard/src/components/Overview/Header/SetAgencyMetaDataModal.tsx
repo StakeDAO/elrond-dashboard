@@ -86,9 +86,8 @@ const SetAgencyMetaDataModal = () => {
                       <div className="input-group">
                         <input
                           type="text"
-                          className={`form-control ${
-                            errors.name && touched.name ? 'is-invalid' : ''
-                          }`}
+                          className={`form-control ${errors.name && touched.name ? 'is-invalid' : ''
+                            }`}
                           id="name"
                           name="name"
                           data-testid="name"
@@ -104,9 +103,8 @@ const SetAgencyMetaDataModal = () => {
                       <div className="input-group">
                         <input
                           type="text"
-                          className={`form-control ${
-                            errors.website && touched.website ? 'is-invalid' : ''
-                          }`}
+                          className={`form-control ${errors.website && touched.website ? 'is-invalid' : ''
+                            }`}
                           id="website"
                           name="website"
                           data-testid="website"
@@ -122,9 +120,8 @@ const SetAgencyMetaDataModal = () => {
                       <div className="input-group">
                         <input
                           type="text"
-                          className={`form-control ${
-                            errors.keybase && touched.keybase ? 'is-invalid' : ''
-                          }`}
+                          className={`form-control ${errors.keybase && touched.keybase ? 'is-invalid' : ''
+                            }`}
                           id="keybase"
                           name="keybase"
                           data-testid="keybase"

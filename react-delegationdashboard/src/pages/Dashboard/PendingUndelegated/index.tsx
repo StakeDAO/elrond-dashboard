@@ -83,7 +83,8 @@ const UndelegatedListView = () => {
 
   React.useEffect(
     getUserUnDelegated,
-    /* eslint-disable react-hooks/exhaustive-deps */ [networkConfig]
+    /* eslint-disable react-hooks/exhaustive-deps */
+    [networkConfig]
   );
 
   return (

@@ -31,7 +31,9 @@ const Owner = () => {
     });
   };
 
-  useEffect(fetchAccount, /* eslint-disable react-hooks/exhaustive-deps */ []);
+  useEffect(fetchAccount,
+    /* eslint-disable react-hooks/exhaustive-deps */
+    []);
 
   const isLedgerLogin = getItem('ledgerLogin') && !ledgerAccount;
   const isWalletConnect = getItem('walletConnectLogin') && !walletConnectAccount;
@@ -54,7 +56,9 @@ const Owner = () => {
     }
   };
 
-  useEffect(dispatchLoginType, /* eslint-disable react-hooks/exhaustive-deps */ []);
+  useEffect(dispatchLoginType,
+    /* eslint-disable react-hooks/exhaustive-deps */
+    []);
 
   if (!loggedIn) {
     return <Redirect to="/" />;

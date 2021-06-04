@@ -169,7 +169,7 @@ const Layout = ({ children, page }: { children: React.ReactNode; page: string })
               aprPercentage: (
                 APR -
                 APR *
-                  ((contract && contract.serviceFee ? parseFloat(contract.serviceFee) : 0) / 100)
+                ((contract && contract.serviceFee ? parseFloat(contract.serviceFee) : 0) / 100)
               )
                 .toFixed(2)
                 .toString(),
@@ -180,7 +180,7 @@ const Layout = ({ children, page }: { children: React.ReactNode; page: string })
           console.error('To do ', e);
         });
     },
-    /* eslint-disable react-hooks/exhaustive-deps */ []
+    /* eslint-disable react-hooks/exhaustive-deps */[]
   );
 
   return (

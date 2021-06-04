@@ -63,7 +63,9 @@ const MyDelegation = () => {
       });
   };
 
-  React.useEffect(getAllData, /* eslint-disable react-hooks/exhaustive-deps */ []);
+  React.useEffect(getAllData,
+    /* eslint-disable react-hooks/exhaustive-deps */
+    []);
 
   return (
     <>
